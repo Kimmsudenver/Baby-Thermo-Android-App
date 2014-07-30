@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nursery</string>
+    <string name="main">Main Menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="start">Start Monitoring</string>
+    <string name="alert">Alert Option</string>
+    <string name="guide">User Guide</string>
+    <string name="setting">Settings</string>
+     <string name="cold">Cold</string>
+     <string name="current">Current</string>
+     <string name="hot">Hot</string>
+     <string name="degree">Degree</string>
+     <string name="coldtemp">Cold</string>
+     <string name="hottemp">Hot</string>
+     <string name="back">Back</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="detect">Detect Bluetooth</string>
+    <string name="connect">Connect Bluetooth</string>
+    <string name="notify">Notify To: </string>
+    <string name="addnotifyButton">OK</string>
+    <string name="ok">OK</string>
+     <string name="stop">Stop Monitoring</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="me">Me</string>
+      <string name="dry">Dry</string>
+       <string name="humid">Humid</string>
+    <string name="name">Name</string>
+     <string name="edit">Edit</string>
+      <string name="guideb">Back</string>
+      <string name="userguide">User Guide</string>
+      <string name="guidetext">\tKeep your home at a comfortable temperature of between 68 to 72 degrees Fahrenheit
+don\'t over-bundle your baby, but instead consider dressing them with one extra layer than you are wearing yourself and then make sure that your baby doesn\'t seem overheated \n\n\tThe 68 to 72 degrees Fahrenheit temperature is likely more for the wintertime when you have the heat on, as that would typically be a little cold in the summer when you have the air-conditioner on.\n\n\t A temperature of 75 to 78 would be more sensible in the summer and more environmentally friendly.</string>
+    
+    
+    
+           
+
+</resources>

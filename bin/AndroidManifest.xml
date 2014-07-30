@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.babythermo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+	  <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	  <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	  <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:name="com.example.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.example.babythermo.BROADCAST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           
+        </activity>     
+         <receiver android:name=".MyReceiver" android:exported="true"
+    			 android:permission="com.google.android.c2dm.permission.SEND" >
+                <intent-filter>
+        			<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        		<category android:name="YOUR_PACKAGE_NAME" />
+     			</intent-filter>
+     	</receiver>
+     	 <service android:name=".GcmIntentService" />
+     	 <service android:name="sensorService"
+     	     android:exported="false"/>
+    </application>  
+
+</manifest>
